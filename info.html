@@ -113,52 +113,12 @@
   }
   .statement + .statement{ margin-top: 10px; }
 
-  .moodboard-collage{
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    width: 100vw;
-    min-height: 155vh;
-    overflow: hidden;
-    background:
-      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(124,38,52,0.55), transparent 60%),
-      radial-gradient(ellipse 70% 40% at 50% 100%, rgba(124,38,52,0.4), transparent 60%),
-      #4a1420;
-  }
-  .piece{
-    position: absolute;
-    box-shadow: 5px 8px 18px -4px rgba(10,4,6,0.5);
-  }
-  .piece.rect{ border-radius: 2px; }
-  .piece.blob{ border-radius: 63% 37% 54% 46% / 43% 37% 63% 57%; }
-  .piece.diamond{ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
-  .piece.arch{ border-radius: 50% 50% 0 0 / 62% 62% 0 0; }
-  .piece.notch{ clip-path: polygon(0 0, 100% 0, 100% 78%, 82% 100%, 0 100%); }
-
-  .piece.p-velvet{ background: linear-gradient(155deg, #33503a, #141f17); }
-  .piece.p-gold{ background: linear-gradient(155deg, #f1dca8, #ad7f36); }
-  .piece.p-wine{ background: linear-gradient(155deg, #7c2634, #3b0f18); }
-  .piece.p-candle{ background: radial-gradient(circle at 32% 28%, #ffe9b0, #8a632a 72%); }
-  .piece.p-moss{ background: linear-gradient(155deg, #4a5d46, #1c2a1d); }
-  .piece.p-parchment{ background: linear-gradient(155deg, #dcd0ad, #a97c33); }
-  .piece.p-cream{ background: var(--card); }
-  .piece.p-ink{ background: linear-gradient(155deg, #2a241a, #0c0a07); }
-  .piece.p-rose{ background: linear-gradient(155deg, #e8b4c8, #c77b96); }
-  .piece.p-chrome{ background: linear-gradient(145deg, #eef0f4, #a9adb8 45%, #54566a); }
-
-  .piece.photo{
-    background-size: cover;
+  .moodboard-img{
+    display: block;
+    width: 100%;
     border: 3px solid transparent;
     border-image: linear-gradient(135deg, #3e1d38, #8a6a3d) 1;
-    filter: sepia(0.45) saturate(2) hue-rotate(312deg) brightness(0.92) contrast(1.08);
-  }
-
-  .ephemera{
-    position: absolute;
-    z-index: 5;
-    filter: drop-shadow(2px 3px 4px rgba(10,4,6,0.5));
+    box-shadow: 0 20px 40px -18px rgba(23,30,15,0.5);
   }
 
   .collage-caption{
@@ -458,94 +418,9 @@
 
     <section>
       <h2>Moodboard</h2>
+      <img class="moodboard-img" src="assets/moodboard.jpg" alt="A moodboard of the night ahead, channeling old-Hollywood glamour in velvet and gold.">
+      <p class="collage-caption">&mdash; the general vibe &mdash;</p>
     </section>
-    </div>
-
-    <div class="moodboard-collage">
-      <!-- champagne tower -->
-      <div class="piece rect p-wine" style="top:2%; left:8vw; width:34vw; height:30vh; transform:rotate(-2deg);">
-        <svg viewBox="0 0 120 150" style="width:100%; height:100%;" aria-hidden="true">
-          <g stroke="#e7cf9a" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M60,14 C58,20 62,24 60,30"/>
-            <line x1="83" y1="16" x2="87" y2="24"/><line x1="87" y1="16" x2="83" y2="24"/>
-            <line x1="33" y1="20" x2="37" y2="28"/><line x1="37" y1="20" x2="33" y2="28"/>
-            <path d="M52,30 L60,39 L68,30"/><line x1="60" y1="39" x2="60" y2="52"/><ellipse cx="60" cy="55" rx="6" ry="1.6"/>
-            <path d="M40,54 L48,63 L56,54"/><line x1="48" y1="63" x2="48" y2="76"/><ellipse cx="48" cy="79" rx="6" ry="1.6"/>
-            <path d="M64,54 L72,63 L80,54"/><line x1="72" y1="63" x2="72" y2="76"/><ellipse cx="72" cy="79" rx="6" ry="1.6"/>
-            <path d="M28,78 L36,87 L44,78"/><line x1="36" y1="87" x2="36" y2="100"/><ellipse cx="36" cy="103" rx="6" ry="1.6"/>
-            <path d="M52,78 L60,87 L68,78"/><line x1="60" y1="87" x2="60" y2="100"/><ellipse cx="60" cy="103" rx="6" ry="1.6"/>
-            <path d="M76,78 L84,87 L92,78"/><line x1="84" y1="87" x2="84" y2="100"/><ellipse cx="84" cy="103" rx="6" ry="1.6"/>
-            <path d="M16,102 L24,111 L32,102"/><line x1="24" y1="111" x2="24" y2="124"/><ellipse cx="24" cy="127" rx="6" ry="1.6"/>
-            <path d="M40,102 L48,111 L56,102"/><line x1="48" y1="111" x2="48" y2="124"/><ellipse cx="48" cy="127" rx="6" ry="1.6"/>
-            <path d="M64,102 L72,111 L80,102"/><line x1="72" y1="111" x2="72" y2="124"/><ellipse cx="72" cy="127" rx="6" ry="1.6"/>
-            <path d="M88,102 L96,111 L104,102"/><line x1="96" y1="111" x2="96" y2="124"/><ellipse cx="96" cy="127" rx="6" ry="1.6"/>
-          </g>
-        </svg>
-      </div>
-
-      <!-- fashion sketch, feathered gown -->
-      <div class="piece rect p-ink" style="top:4%; left:56vw; width:36vw; height:44vh; transform:rotate(2deg);">
-        <svg viewBox="0 0 100 220" style="width:100%; height:100%;" aria-hidden="true">
-          <g stroke="#e7cf9a" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <ellipse cx="52" cy="20" rx="8" ry="10"/>
-            <path d="M52,30 L50,40"/>
-            <path d="M40,44 Q52,40 64,46"/>
-            <path d="M40,44 Q30,38 32,24"/>
-            <path d="M64,46 Q70,60 66,82"/>
-            <path d="M40,44 C36,58 40,74 44,86"/>
-            <path d="M64,46 C68,58 64,74 60,86"/>
-            <path d="M44,86 Q52,90 60,86"/>
-            <path d="M44,86 C20,110 10,150 14,185" stroke-width="1.1"/>
-            <path d="M60,86 C84,110 90,150 86,185" stroke-width="1.1"/>
-            <g stroke-width="1.1">
-              <path d="M20,100 Q16,112 20,124"/><path d="M30,96 Q24,110 28,122"/><path d="M40,94 Q36,108 40,120"/>
-              <path d="M50,93 Q50,107 50,121"/><path d="M60,94 Q64,108 60,120"/><path d="M70,96 Q76,110 72,122"/>
-              <path d="M80,100 Q84,112 80,124"/>
-              <path d="M16,130 Q10,145 16,158"/><path d="M28,132 Q22,146 26,160"/><path d="M40,134 Q36,148 40,162"/>
-              <path d="M52,135 Q52,149 52,163"/><path d="M64,134 Q68,148 64,162"/><path d="M76,132 Q82,146 78,160"/>
-              <path d="M88,130 Q92,144 86,158"/>
-              <path d="M22,162 Q16,174 20,184"/><path d="M46,166 Q44,178 46,186"/><path d="M70,162 Q76,174 72,184"/>
-            </g>
-            <path d="M44,185 L42,208"/><path d="M60,185 L62,208"/>
-          </g>
-        </svg>
-      </div>
-
-      <!-- four friends, walking together -->
-      <div class="piece photo blob" style="top:32%; left:4vw; width:58vw; height:24vh; transform:rotate(-1deg); background-image:url('assets/walk.jpg'); background-position: 50% 35%;"></div>
-
-      <!-- two of the guys, in their suits -->
-      <div class="piece photo notch" style="top:54%; left:52vw; width:42vw; height:22vh; transform:rotate(1.5deg); background-image:url('assets/suits.jpg'); background-size:175% auto; background-position: 40% 32%;"></div>
-
-      <!-- the dj and his decks -->
-      <div class="piece photo rect" style="top:77%; left:8vw; width:36vw; height:24vh; transform:rotate(-2deg); background-image:url('assets/dj.jpg'); background-position: 50% 70%;"></div>
-
-      <!-- abstract filler pieces -->
-      <div class="piece rect p-gold" style="top:0%; left:40vw; width:14vw; height:16vh; transform:rotate(2deg);"></div>
-      <div class="piece blob p-rose" style="top:13%; left:38vw; width:16vw; height:14vh; transform:rotate(-3deg);"></div>
-      <div class="piece diamond p-chrome" style="top:0%; left:92vw; width:12vw; height:11vh; transform:rotate(0deg);"></div>
-      <div class="piece rect p-parchment" style="top:23%; left:64vw; width:28vw; height:8vh; transform:rotate(1deg);"></div>
-      <div class="piece arch p-candle" style="top:14%; left:2vw; width:16vw; height:14vh; transform:rotate(-2deg);"></div>
-      <div class="piece diamond p-moss" style="top:24%; left:90vw; width:12vw; height:11vh; transform:rotate(0deg);"></div>
-      <div class="piece rect p-cream" style="top:45%; left:4vw; width:18vw; height:11vh; transform:rotate(-2deg);"></div>
-      <div class="piece blob p-gold" style="top:44%; left:22vw; width:16vw; height:12vh; transform:rotate(2deg);"></div>
-      <div class="piece rect p-parchment" style="top:58%; left:6vw; width:22vw; height:11vh; transform:rotate(1.5deg);"></div>
-      <div class="piece rect p-candle" style="top:66%; left:48vw; width:18vw; height:12vh; transform:rotate(-1.5deg);"></div>
-      <div class="piece diamond p-rose" style="top:68%; left:70vw; width:16vw; height:14vh; transform:rotate(1deg);"></div>
-      <div class="piece rect p-velvet" style="top:88%; left:48vw; width:44vw; height:11vh; transform:rotate(1deg);"></div>
-      <div class="piece rect p-wine" style="top:89%; left:2vw; width:42vw; height:10vh; transform:rotate(-1deg);"></div>
-
-      <svg class="ephemera" viewBox="0 0 24 24" style="top:9%; left:48vw; width:5vw;" aria-hidden="true">
-        <path d="M12 1 L14 10 L23 12 L14 14 L12 23 L10 14 L1 12 L10 10 Z" fill="#e7cf9a"/>
-      </svg>
-      <svg class="ephemera" viewBox="0 0 24 24" style="top:63%; left:30vw; width:4vw;" aria-hidden="true">
-        <path d="M12 1 L14 10 L23 12 L14 14 L12 23 L10 14 L1 12 L10 10 Z" fill="#cfa454"/>
-      </svg>
-    </div>
-
-    <p class="collage-caption">&mdash; the general vibe &mdash;</p>
-
-    <div class="page" style="padding-top:0;">
 
     <section>
       <h2>A Sneak Peek</h2>
